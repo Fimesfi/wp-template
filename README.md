@@ -3,7 +3,7 @@
 Tämä on valmis plug-and-play pohja verkkosivukehittäjille, jotka haluavat helposti liittää vanilla HTML & CSS verkkosivunsa Wordpressiin.
 Tarkoituksena on että front-end kehittäjät kehittävät asiakasprojektina staattisen verkkosivun, joka olisi vailla sisällönhallintaa. Tämä dokumentti ohjeistaa, kuinka helposti ja nopeasti staattinen HTML & CSS & JS sivu voidaan sisällyttää Wordpressin järjestelmään tehokkaasti.
 
-**Luonut:** Eeli Gren / Fimes, pääkehittäjä
+**Luonut:** Eeli Gren / [Fimes](https://fimes.fi), pääkehittäjä
 
 ## Asennus ja setup
 
