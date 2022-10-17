@@ -12,7 +12,8 @@ Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](htt
 
 ### 1. Lataa uusin julkaistu paketti
 - Siirrä Wordpressin **wp-content/themes** kansioon.
-- Turhat sivut, postaukset ja plugarit pois
+- Poista default pluginit, sivut ja artikkelit
+- Poista lisäksi turhat teemat
 
 ## Huomioi vanilla sivua tehdessäsi
 - Käytä mahdollisimman paljon selkeitä **default classeja** (esim. `<section>`, `<main>`, `<header>`, ...).
