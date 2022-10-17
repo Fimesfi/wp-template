@@ -1,15 +1,13 @@
-Valmis plug-and-play teema wordpressiin. Sisältää default sivun, sivupohjat, asetukset, funktiot, js, css, external linkkaukset
-ohessa ohjeet ja linkit wpn dokumentaatioon
 
-![image](https://user-images.githubusercontent.com/115319031/196048672-9a70ec69-34bb-4699-9038-f66c66d1c3cd.png)
+# Wordpress pohja kehittäjille
+Tämä on valmis plug-and-play pohja verkkosivukehittäjille, jotka haluavat helposti liittää vanilla HTML & CSS verkkosivunsa Wordpressiin.
 
-kansiorakenne (kartta)
 
-listattuna vaiheet mitä pitää tehdä!! (tutoriaali)
-kommentoinnit template teeman filuihin (helppo vaihtaa vain juuri siihen projektiin mitä työstää funktiot ja classit yms)
 
-listattuna asiat, jotka tulee ottaa huomioon vanilla sivua tehdessä:
-- käytä mahd. paljon default classeja
-- luo globaalit tyylit typographille ja tietyille kuten buttoneille
-- aluksi resetoi tyylit
-- nimeä classit huolellisesti esim. main-section-contact
+## Asennus ja setup
+
+Asennetaan uusin Wordpress versio [tästä](https://wordpress.org/latest.zip).
+Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](https://wordpress.org/support/article/how-to-install-wordpress/).
+
+### 1. Lataa oheinen paketti
+- Siirrä Wordpressin **wp-content** kansioon.
