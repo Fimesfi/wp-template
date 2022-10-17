@@ -20,10 +20,15 @@ Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](htt
 - Nimeä elementtien classit ja id:t järjevästi (esim. home-section-main), erota sanat classissa **-** viivalla.
 
 
+## Vaaditut pluginit
 
-
-
-
+Custom teeman editointi:
+- Yoast CEO
+- https://www.youtube.com/watch?v=eMCOE9x5mCc
+- WP-Optimizer
+- iTheme-security
+- Google Analytics
+- UpdraftPlus
 
 
 # wp-template
