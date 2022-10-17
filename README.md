@@ -10,8 +10,8 @@ Tarkoituksena on että front-end kehittäjät kehittävät asiakasprojektina sta
 Asennetaan uusin Wordpress versio [tästä](https://wordpress.org/latest.zip).
 Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](https://wordpress.org/support/article/how-to-install-wordpress/).
 
-### 1. Lataa oheinen paketti
-- Siirrä Wordpressin **wp-content** kansioon.
+### 1. Lataa uusin julkaistu paketti
+- Siirrä Wordpressin **wp-content/themes** kansioon.
 
 ## Huomioi vanilla sivua tehdessäsi
 - Käytä mahdollisimman paljon selkeitä **default classeja** (esim. `<section>`, `<main>`, `<header>`, ...).
