@@ -13,7 +13,7 @@ Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](htt
 - Siirrä Wordpressin **wp-content** kansioon.
 
 ## Huomioi vanilla sivua tehdessäsi
-- Käytä mahdollisimman paljon selkeitä **default classeja** (esim. <section>, <main>, <header>, ...).
+- Käytä mahdollisimman paljon selkeitä **default classeja** (esim. `<section>`, `<main>`, `<header>`, ...).
 - Luo globaalit tyyli typographille ja globaaleille elementeille, jotka ovat samoja joka sivulla (buttonit, tekstit, h1, ...)
 - Aluksi resetoi default tyylit (* { ... })
 - Nimeä elementtien classit ja id:t järjevästi (esim. home-section-main), erota sanat classissa **-** viivalla.
