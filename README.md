@@ -6,16 +6,16 @@ Tarkoituksena on että front-end kehittäjät kehittävät asiakasprojektina sta
 **Luonut:** Eeli Gren / [Fimes](https://fimes.fi), pääkehittäjä
 
 **Ominaisuudet:**
-[X] - Hakukoneoptimoitu
-[X] - Helppokäyttöinen
-[X] - Tehokas ja nopea
-[X] - Tuki lomakkeille
-[] - Tuki custom CSS, JS, PHP... tiedostoille (PHPPUUTTUU!!)
-[X] - Sisältö on muokattavissa
-[] - Artikkelituki
-[] - Hakutoiminto
-[] - Kommentointituki
-[] - WhooCommerence tuki
+- [X] - Hakukoneoptimoitu
+- [X] - Helppokäyttöinen
+- [X] - Tehokas ja nopea
+- [X] - Tuki lomakkeille
+- [] - Tuki custom CSS, JS, PHP... tiedostoille (PHPPUUTTUU!!)
+- [X] - Sisältö on muokattavissa
+- [] - Artikkelituki
+- [] - Hakutoiminto
+- [] - Kommentointituki
+- [] - WhooCommerence tuki
 
 ## Huomioitavaa vanilla sivua tehdessäsi
 - Käytä mahdollisimman paljon selkeitä **default classeja** (esim. `<section>`, `<main>`, `<header>`, ...).
