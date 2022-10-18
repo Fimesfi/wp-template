@@ -72,7 +72,7 @@ Kun vaihe 1. on suoritettu:
 3. Muokkaa `style.css`, teeman perustiedot
 4. Ota teema käyttöön Wordpressin teemoista
 5. Luo sivut vanilla HTML & CSS sivun pohjalta (kts. Huomioitavaa vanilla sivua tehdessäsi)
-
+6. Luo valikot
 
 # TO DO:
 - functions.phpeehen tuki jquerylle ja font awesomelle sekä custom fonteille
@@ -81,3 +81,6 @@ Funktioohjeisiin lisättävä vielä:
 - Sivun perustiedon kuten otsikon hakufunktio
 - Sivun datan haku funktio the_post
 - jne.
+
+- Logon haku funktio
+- Faviconin lisääminen ja haku
