@@ -10,12 +10,12 @@ Tarkoituksena on että front-end kehittäjät kehittävät asiakasprojektina sta
 - [X] - Helppokäyttöinen
 - [X] - Tehokas ja nopea
 - [X] - Tuki lomakkeille
-- [] - Tuki custom CSS, JS, PHP... tiedostoille (PHPPUUTTUU!!)
+- [ ] - Tuki custom CSS, JS, PHP... tiedostoille (PHPPUUTTUU!!)
 - [X] - Sisältö on muokattavissa
-- [] - Artikkelituki
-- [] - Hakutoiminto
-- [] - Kommentointituki
-- [] - WhooCommerence tuki
+- [ ] - Artikkelituki
+- [ ] - Hakutoiminto
+- [ ] - Kommentointituki
+- [ ] - WhooCommerence tuki
 
 ## Huomioitavaa vanilla sivua tehdessäsi
 - Käytä mahdollisimman paljon selkeitä **default classeja** (esim. `<section>`, `<main>`, `<header>`, ...).
