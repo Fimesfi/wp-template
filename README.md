@@ -34,7 +34,7 @@ Custom teeman editointi:
 **Valinnaiset pluginit**
 - [WPForms](https://fi.wordpress.org/plugins/wpforms-lite/) (Lomakkeet)
 
-## Asennus ja setup
+# Asennus ja setup
 Asennetaan uusin Wordpress versio [tästä](https://wordpress.org/latest.zip).
 Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](https://wordpress.org/support/article/how-to-install-wordpress/).
 
