@@ -23,10 +23,6 @@ Tarkoituksena on että front-end kehittäjät kehittävät asiakasprojektina sta
 - Aluksi resetoi default tyylit (* { ... })
 - Nimeä elementtien classit ja id:t järjevästi (esim. home-section-main), erota sanat classissa **-** viivalla.
 
-## Asennus ja setup
-Asennetaan uusin Wordpress versio [tästä](https://wordpress.org/latest.zip).
-Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](https://wordpress.org/support/article/how-to-install-wordpress/).
-
 ## Vaaditut pluginit
 Custom teeman editointi:
 - [Yoast CEO](https://fi.wordpress.org/plugins/wordpress-seo/)  (Hakukoneoptimointi)
@@ -38,8 +34,13 @@ Custom teeman editointi:
 **Valinnaiset pluginit**
 - [WPForms](https://fi.wordpress.org/plugins/wpforms-lite/) (Lomakkeet)
 
+## Asennus ja setup
+Asennetaan uusin Wordpress versio [tästä](https://wordpress.org/latest.zip).
+Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](https://wordpress.org/support/article/how-to-install-wordpress/).
+
 ### (Vaihe 0.) Suunnittelu
 Kansiorakenteen valmistelu, esimerkki:
+
 ```
 wp-content/themes/THEMENAME/
 ├─ css/
@@ -54,7 +55,6 @@ wp-content/themes/THEMENAME/
 ├─ 404.php
 ├─ header.php
 ```
-
 
 ### (Vaihe 1.) Wordpress valmistelu
 Kun Wordpress on asennettu:
