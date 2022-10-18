@@ -40,6 +40,7 @@ Custom teeman editointi:
 
 ### (Vaihe 0.) Suunnittelu
 Kansiorakenteen valmistelu, esimerkki:
+```
 wp-content/themes/THEMENAME/
 ├─ css/
 ├─ fonts/
@@ -52,6 +53,7 @@ wp-content/themes/THEMENAME/
 ├─ style.css
 ├─ 404.php
 ├─ header.php
+```
 
 
 ### (Vaihe 1.) Wordpress valmistelu
