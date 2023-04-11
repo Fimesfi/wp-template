@@ -1,86 +1,101 @@
 
 # Wordpress pohja kehittäjille
-Tämä on valmis plug-and-play pohja verkkosivukehittäjille, jotka haluavat helposti liittää vanilla HTML & CSS verkkosivunsa Wordpressiin.
-Tarkoituksena on että front-end kehittäjät kehittävät asiakasprojektina staattisen verkkosivun, joka olisi vailla sisällönhallintaa. Tämä dokumentti ohjeistaa, kuinka helposti ja nopeasti staattinen HTML & CSS & JS sivu voidaan sisällyttää Wordpressin järjestelmään tehokkaasti.
+Tämä on valmis pohjateema, josta on helposti jalostettavissa täydellinen Wordpress sivusto. Teema sisältää tarpeelliset funktiot ja toiminnot, jotta sen kanssa voi operoida Wordpress sivustolla.
 
 **Luonut:** Eeli Gren / [Fimes](https://fimes.fi), pääkehittäjä
 
-**Ominaisuudet:**
-- [X] Hakukoneoptimoitu
-- [X] Helppokäyttöinen
-- [X] Tehokas ja nopea
-- [X] Tuki lomakkeille
-- [ ] Tuki custom CSS, JS, PHP... tiedostoille (PHPPUUTTUU!!)
-- [X] Sisältö on muokattavissa
-- [ ] Artikkelituki
-- [ ] Hakutoiminto
-- [ ] Kommentointituki
-- [ ] WhooCommerence tuki
+-------------
 
-## Huomioitavaa vanilla sivua tehdessäsi
-- Käytä mahdollisimman paljon selkeitä **default classeja** (esim. `<section>`, `<main>`, `<header>`, ...).
-- Luo globaalit tyyli typographille ja globaaleille elementeille, jotka ovat samoja joka sivulla (buttonit, tekstit, h1, ...)
-- Aluksi resetoi default tyylit (* { ... })
-- Nimeä elementtien classit ja id:t järjevästi (esim. home-section-main), erota sanat classissa **-** viivalla.
+# Säännöt vanilla HTML/CSS rakentamiseen:
 
-## Vaaditut pluginit
-Custom teeman editointi:
-- [Yoast CEO](https://fi.wordpress.org/plugins/wordpress-seo/)  (Hakukoneoptimointi)
-- [ACF](https://fi.wordpress.org/plugins/advanced-custom-fields/) (Advanced custom fields)
-- [iTheme-security]() (Turvallisuus)
-- [Google Analytics](https://wordpress.org/plugins/google-analytics-for-wordpress/) (Analytiikka)
-- [UpdraftPlus](https://fi.wordpress.org/plugins/updraftplus/) (Varmuuskopiointi)
-
-**Valinnaiset pluginit**
-- [WPForms](https://fi.wordpress.org/plugins/wpforms-lite/) (Lomakkeet)
+1. Valmistele sivu niin että sen sivut pystyy rakentamaan mahdollisimman kokonaisvaltaisesti Wordpress Gutenberg- editorilla.
+2. Käytä globaaleja tyylejä.
+3. 
 
 # Asennus ja setup
-Asennetaan uusin Wordpress versio [tästä](https://wordpress.org/latest.zip).
-Siirretään se palvelimelle ja valmistellaan tietokanta [ohjeen mukaisesti](https://wordpress.org/support/article/how-to-install-wordpress/).
 
-### (Vaihe 0.) Suunnittelu
-Kansiorakenteen valmistelu, esimerkki:
+### (Vaihe 1.) Asennus
 
+1. Lataa Wordpress haluamaasi kehitysympäristöön (localhost): [Lataa](https://wordpress.org/latest.zip).
+2. Lataa tämän teemapohjan uusin julkaisu.
+3. Siirrä teema Wordpressin `/themes` kansioon.
+4. Asenna Wordpress oppikirjan mukaisesti (tietokanta ja asetukset).
+
+### (Vaihe 2.) Teeman asetukset
+
+1. Muokkaa `style.css` tiedostoon teeman asetukset.
+
+### (Vaihe 3.) Conffaus
+
+1. Poista kaikki pluginit.
+2. Poista kaikki teemat, paitsi `twentytwentythree`.
+3. Poista kaikki sivut ja artikkelit.
+4. Luo kaikki sivut Wordpress hallinnassa, joita sivu tarvitsee ensisijaisesti.
+5. Luo valikot (jos teema käyttää).
+6. Määritä `Etusivu` ja `Artikkelit` sivut Wordpress asetuksista sivuille.
+7. Lisää seuraavat asetukset `wp-config.php`
+    ```
+    define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );
+    define( 'WP_DEBUG', true );
+    ```
+
+### (Vaihe 4.) Asennettavat lisäosat
+
+- Yoast SEO (hakukoneoptimointi)
+- Cookiebot (evästeet)
+- Jetpack (analytiikka ja optimointi)
+- Safe SVG (tuki .svg tiedostoille)
+- Under Construction (työn alla sivu)
+- Salasanasuojaus
+- Atomic Blocks - Gutenberg Blocks Collection (lisäpalikat)
+- Contact Form 7 (yhteydenottolomakkeet)
+
+## Funktiot
+
+Sivun osoitteen haku:
 ```
-wp-content/themes/THEMENAME/
-├─ css/
-├─ fonts/
-├─ js/
-├─ footer.php
-├─ functions.php
-├─ page-changeme.php
-├─ page.php
-├─ screenshot.png
-├─ style.css
-├─ 404.php
-├─ header.php
+<?php echo home_url(); ?>
 ```
 
-### (Vaihe 1.) Wordpress valmistelu
-Kun Wordpress on asennettu:
-1. Poista default pluginit, sivut ja artikkelit
-2. Poista lisäksi turhat teemat
-3. Varmista että asetuksissa ajan formaatit ovat OK
-4. Vaihda `Asetukset > Media => Artikkelin nimi`
-5. Vaihda `Asetukset > Osoiterakenne > Tiedostonjen sijainti => "Järjestä siirtämäni tiedostot..." pois päältä`
-6. Asenna vaaditut pluginit (kts. Vaaditut pluginit)
+Paikallisen tiedoston haku:
+```
+<?php get_localfile('/assets/<tiedosto>'); ?>
+```
 
-### (Vaihe 2.) Teeman valmistelu
-Kun vaihe 1. on suoritettu:
-1. Lataa tämä pohja-arkisto
-2. Pura ladattu .zip-paketti `wp-content/themes` kansioon ja nimeä se projektin mukaan
-3. Muokkaa `style.css`, teeman perustiedot
-4. Ota teema käyttöön Wordpressin teemoista
-5. Luo sivut vanilla HTML & CSS sivun pohjalta (kts. Huomioitavaa vanilla sivua tehdessäsi)
-6. Luo valikot
+Sivun kategorian haku:
+```
+<?php the_category(', '); ?>
+```
 
-# TO DO:
-- functions.phpeehen tuki jquerylle ja font awesomelle sekä custom fonteille
-Funktioohjeisiin lisättävä vielä:
-- Ladatun attachementin haku paikkaan
-- Sivun perustiedon kuten otsikon hakufunktio
-- Sivun datan haku funktio the_post
-- jne.
+Sivun päivämäärän haku:
+```
+<?php the_date(); ?>
+```
 
-- Logon haku funktio
-- Faviconin lisääminen ja haku
+Sivun thumbnailin haku:
+```
+<?php get_thumbnail_url(); ?>
+```
+
+Kuvan haku Wordpress ladatuista kuvista:
+```
+<?php get_mediafile('<tiedosto>'); ?>
+```
+
+Sivun otsikon haku:
+```
+<?php the_title(); ?>
+```
+
+Shortcoden ajaminen:
+```
+<?php
+    echo do_shortcode('[contact-form-7 id="52" title="Yhteydenottolomake"]');
+?>
+```
+
+
+- Tyylit menisi myös gutenbergiin
+- Miten kun sivu pitäisi localilta -> julkaisuun (migraatio, tietokannat)
+- style.css ja globals.css tyyleihin Wordpress tärkeimmät tyylisäännöt
+

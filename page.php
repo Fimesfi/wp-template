@@ -5,8 +5,6 @@
     get_header();
 ?>
 
-Custom static page template here...
-
 <?php
     // Get page basic content
     if(have_posts()) {
