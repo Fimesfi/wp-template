@@ -28,7 +28,7 @@ Tämä on valmis pohjateema, josta on helposti jalostettavissa täydellinen Word
 ### (Vaihe 3.) Conffaus
 
 1. Poista kaikki pluginit.
-2. Poista kaikki teemat, paitsi `twentytwentythree`.
+2. Poista kaikki teemat, paitsi `twentytwentythree` tai viimeisin julkaisu.
 3. Poista kaikki sivut ja artikkelit.
 4. Luo kaikki sivut Wordpress hallinnassa, joita sivu tarvitsee ensisijaisesti.
 5. Luo valikot (jos teema käyttää).
@@ -47,8 +47,27 @@ Tämä on valmis pohjateema, josta on helposti jalostettavissa täydellinen Word
 - Safe SVG (tuki .svg tiedostoille)
 - Under Construction (työn alla sivu)
 - Salasanasuojaus
-- Atomic Blocks - Gutenberg Blocks Collection (lisäpalikat)
+- Genesis Blocks (lisäpalikat)
 - Contact Form 7 (yhteydenottolomakkeet)
+- LiteSpeed Cache
+
+`Mikäli lisäosat vaativat kirjautumisen, luodaan tunnukset esim, noreply@asiakas.fi`
+
+# Sivun siirto localhost -> julkaisukohde
+
+1. Suorita Wordpress asennus kohdewebhotelliin.
+    - Kieli -> Suomi
+    - Tunnuksien luonti
+    - Tietokannan asetukset
+2. Asenna All-in-one WP Migration plugin localhostille
+    - Vie localhostilla oleva sivusto "varmuuskopiona" pluginin avulla tiedostoksi
+3. Asenna All-in-one WP Migration plugin kohteelle
+    - Asenna Automatic Domain Changer plugin ennen varmuuskopion tuomista
+    - Tuo kyseinen varmuuskopio migraatio pluginin avulla
+
+Tämä tuo täysin identtise sivuston localhost -> webhotelli, niin että asetukset ja muutokset siirtyvät.
+
+4. Ennen julkaisua poista vaihe 3. kohta 7. conffaukset
 
 ## Funktiot
 

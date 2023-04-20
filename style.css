@@ -30,10 +30,26 @@ h4 {}
 
 h5 {}
 
-a {}
+h6 {}
 
-a:hover {}
+ul {
 
-hr {}
+}
 
-p {}
+li {
+
+}
+
+a {
+    
+}
+
+/* Primary btn */
+.wp-block-button__link.wp-element-button {
+    
+}
+
+/* Secondary btn */
+.wp-block-button__link.wp-element-button.is-style-outline {
+
+}

@@ -15,7 +15,7 @@ if(!function_exists('themetemplate_setup')) {
         add_image_size( 'custom-post-thumbnail', 288, 162, true );
 
         add_theme_support( 'editor-styles' );
-        dd_editor_style( 'globals.css' );
+        add_editor_style( 'globals.css' );
     }
 }
 
