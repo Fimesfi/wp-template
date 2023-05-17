@@ -4,13 +4,15 @@ Tämä on valmis pohjateema, josta on helposti jalostettavissa täydellinen Word
 
 **Luonut:** Eeli Gren / [Fimes](https://fimes.fi), pääkehittäjä
 
+#MUISTA VERSIOHALLINTA - GITHUB
+Ladattuasi tämän pohjateeman, luo siitä heti Githubiin uusi repo ja muista pitää se ajantasalla itse sivuston käyttämän teeman kanssa.
+
 -------------
 
 # Säännöt vanilla HTML/CSS rakentamiseen:
 
 1. Valmistele sivu niin että sen sivut pystyy rakentamaan mahdollisimman kokonaisvaltaisesti Wordpress Gutenberg- editorilla.
 2. Käytä globaaleja tyylejä.
-3. 
 
 # Asennus ja setup
 
